@@ -1,3 +1,4 @@
+import SignUpButton from "@/component/SignUpButton";
 import SocialLogin from "@/component/social_login";
 
 export default function Login() {
@@ -8,8 +9,13 @@ export default function Login() {
 
       <div>비밀번호</div>
       <input type="password" />
-      <div className="pt-3">
-        <SocialLogin/>
+      <div className="pt-3 d-flex flex-column gap-2">
+        <div>
+          <SocialLogin />
+        </div>
+        <div>
+          <SignUpButton/>
+        </div>
       </div>
     </>
   );
